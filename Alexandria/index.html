@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria</title>
+    <link rel="shortcut icon" href="open-book.png">
+</head>
+<body>
+    <nav>
+        <span>
+        <img src="open-book.png" alt="logo">
+        <h2>Alexandria</h2>
+        </span>
+        <span>
+        <button onclick="openModal()" id="addBook">Adicionar Livro</button>
+        </span>
+    </nav>
+        <main>
+            <dialogue id="mainModal">
+                <h3>Adicionar Livro</h3>
+                <button onclick="closeModal()" id="closeButton">X</button>
+            <label for="titleInput">Título:</label>
+            <input id="titleInput" type="text">
+            <label for="writerInput">Autor:</label>
+            <input id="writerInput" type="text">
+            <label for="pagesInput">Quantidade de páginas:</label>
+            <input id="pagesInput"  type="number">
+            <span>
+            <label for="statusInput">Já leu?</label>
+            <input id="statusInput" type="checkbox">
+            </span>
+            <button onclick="getInfo()" id="addBook">Concluir</button>
+            </dialogue>
+            <ul id="bookShelf">
+            </ul>
+        </main>
+    <script src="main.js"></script>
+</body>
+</html>
